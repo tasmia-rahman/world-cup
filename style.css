@@ -83,7 +83,7 @@
   }
   100% {
     background-color: white;
-    left: 250px;
+    left: 200px;
   }
 }
 
@@ -254,6 +254,9 @@ Media Queries for tablet device
 -------------------------------- */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .banner:hover .ball {
+    display: none;
+  }
   .banner-info h1 {
     font-size: 36px;
     line-height: 50px;
@@ -306,6 +309,9 @@ Media Queries for mobile device
     flex-direction: column;
     text-align: center;
     padding: 50px 65px 0;
+  }
+  .banner:hover .ball {
+    display: none;
   }
   .banner-info,
   .banner-img {
